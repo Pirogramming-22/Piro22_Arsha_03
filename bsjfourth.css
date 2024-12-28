@@ -210,7 +210,7 @@ body {
     background-color: #f5f6f8;
     padding: 60px 0;
     scroll-margin-top: 88px;
-    overflow: clip;
+  
 }
 
 #bsj4{
@@ -272,16 +272,17 @@ body {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 24px;
-    margin-right: 51.5px;
-    margin-left: 51.5px;
+    margin: 0 51.5px;
     height: 275px;
-    overflow: hidden;
+
 }
 
 .bsj-fourth-maincard{
     background-color: var(--background-color);
-    transition-delay: .1s;
     padding: 50px 30px;
     transition: all ease-in-out 0.4s;
-    height: 100%; 
+}
+
+.bsj-fourth-maincard:hover{
+    transform: translateY(-10px);
 }
