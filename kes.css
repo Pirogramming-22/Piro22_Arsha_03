@@ -1,0 +1,186 @@
+/* 섹션 헤더 */
+.kes--testimonials-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kes--header-title {
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+}
+.kes--header-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.kes--header-divider > div:nth-child(1) {
+    width: 160px;
+    height: 1px;
+    background-color: #44444466;
+}
+.kes--header-divider > div:nth-child(2) {
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    position: relative;
+    top: -2px;
+}
+.kes--header-description {
+    color: #444444;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* 섹션8 body */
+.kes--testimonials-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.kes--testimonials-humaninfo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+    height: 286.3px;
+    padding-inline: 12px;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes kes__slide {
+    0% { transform: translateX(0%);}
+    18% { transform: translateX(0%); }
+    20% { transform: translateX(-120%); }
+    60% { transform: scale(0); }
+    80% { transform: translateX(120%);}
+    98% { transform: translateX(120%);}
+}
+
+.kes--testimonials-body-humaninfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: kes__slide 25s infinite;
+    position: absolute;
+}
+.kes--testimonials-body-humaninfo:nth-child(1) {
+    animation-delay: 0s;
+}
+.kes--testimonials-body-humaninfo:nth-child(2) {
+    animation-delay: 5s;
+}
+.kes--testimonials-body-humaninfo:nth-child(3) {
+    animation-delay: 10s;
+}
+.kes--testimonials-body-humaninfo:nth-child(4) {
+    animation-delay: 15s;
+}
+.kes--testimonials-body-humaninfo:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.kes--testimonials-body-humaninfo-image {
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.kes--testimonials-body-humaninfo-image > img {
+    height: 100%;
+    width: auto;
+}
+.kes--testimonials-body-humaninfo-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517e;
+    line-height: 24px;
+}
+.kes--testimonials-body-humaninfo-job {
+    margin: 0;
+    font-size: 14px;
+    color: color-mix(in srgb, #444444, transparent 40%);
+}
+.kes--testimonials-body-humaninfo-stars {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block: 15px;
+}
+.kes--testimonials-body-humaninfo-stars > .kes--star-icon {
+    height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kes--testimonials-body-humaninfo-stars > .kes--star-icon > svg {
+    fill: #ffc107;
+}
+
+.kes--testimonials-body-humaninfo-description {
+    position: relative;
+    color: #444444;
+    font-size: 16px;
+    width: 850px;
+    text-align: center;
+    font-style: italic;
+}
+.kes--testimonials-body-humaninfo-description::before {
+    content: url(./svgs/quote_left.svg);
+    position: relative;
+}
+.kes--testimonials-body-humaninfo-description::after {
+    content: url(./svgs/quote_right.svg);
+    position: relative;
+    top: 15px;
+}
+
+.kes--testimonials-body-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.kes--testimonials-body-buttons > button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: color-mix(in srgb, #444444, transparent 85%);
+    margin-inline: 4px;
+}
+@keyframes kes__slide_button {
+    0%, 20% { background-color: #47b2e4; } /* 강조 시간 */
+    20.1%, 100% { background-color: color-mix(in srgb, #444444, transparent 85%); } /* 기본 색상 */
+}
+.kes--testimonials-body-buttons > button {
+    animation: kes__slide_button 25s infinite;
+}
+.kes--testimonials-body-buttons > button:nth-child(1) {
+    animation-delay: -0.5s;
+}
+.kes--testimonials-body-buttons > button:nth-child(2) {
+    animation-delay: 4.5s;
+}
+.kes--testimonials-body-buttons > button:nth-child(3) {
+    animation-delay: 9.5s;
+}
+.kes--testimonials-body-buttons > button:nth-child(4) {
+    animation-delay: 14.5s;
+}
+.kes--testimonials-body-buttons > button:nth-child(5) {
+    animation-delay: 19.5s;
+}
+.kes--testimonials-body-buttons > button:hover {
+    cursor: pointer;
+}
