@@ -288,6 +288,10 @@ body {
 
 .bsj-fourth-maincard:hover{
     transform: translateY(-10px);
+    
+}
+.bsj-fourth-maincard:hover .bsj-fourth-maincard-title{
+    color: var(--accent-color);
 }
 
 .bsj-fourth-maincard-icon{
@@ -312,3 +316,4 @@ body {
     margin-bottom: 0;
     color:var(--default-color);
 }
+
