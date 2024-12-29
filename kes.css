@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 960px;
 }
 .kes--header-title {
     color: #37517e;
@@ -39,6 +40,15 @@
 }
 
 /* 섹션8 body */
+/* Section 8 */
+#kes8 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-block: 60px;
+    align-items: center;
+}
+
 .kes--testimonials-body {
     display: flex;
     flex-direction: column;
@@ -51,7 +61,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 960px;
-    height: 286.3px;
+    height: 302.3px;
     padding-inline: 12px;
     overflow: hidden;
     position: relative;
@@ -149,7 +159,7 @@
 .kes--testimonials-body-buttons {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 .kes--testimonials-body-buttons > button {
     width: 12px;
@@ -183,4 +193,82 @@
 }
 .kes--testimonials-body-buttons > button:hover {
     cursor: pointer;
+}
+
+
+
+/* Section 9 */
+#kes9 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f6f8;
+    padding-block: 60px;
+    align-items: center;
+}
+.kes--questions-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.kes--questions-cards-container {
+    width: 736px;
+    padding-inline: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.kes--questions-body-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    gap: 10px;
+}
+.kes--questions-body-card-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.kes--questions-body-card-header > svg:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    fill: #47b2e4;
+}
+.kes--questions-body-card-header > h3 {
+    margin: 0;
+    margin-inline: 10px;
+    flex: 1;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #37517e;
+    transition: 0.3s;
+}
+.kes--questions-body-card-header > h3:hover {
+    cursor: pointer;
+    color: #47b2e4;
+    transition: 0.3s;
+}
+.kes--questions-body-card-header > a {
+    width: 16px;
+    height: 16px;
+    fill: #444444;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+}
+.kes--questions-body-card-description {
+    text-align: left;
+    margin: 0;
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
 }
