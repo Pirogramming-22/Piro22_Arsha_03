@@ -3,6 +3,55 @@
 *{
     box-sizing: border-box;
 }
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+body {
+    font-family: var(--default-font);
+}
+.kes--testimonials-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kes--header-title {
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    font-family: var(--heading-font);
+    
+}
+.kes--header-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.kes--header-divider > div:nth-child(1) {
+    width: 160px;
+    height: 1px;
+    background-color: #44444466;
+}
+.kes--header-divider > div:nth-child(2) {
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    position: relative;
+    top: -2px;
+}
+.kes--header-description {
+    color: #444444;
+    line-height: 24px;
+    margin: 0;
+}
+
 
 .cms__main__container{
     background-color: #37517e;
@@ -71,63 +120,307 @@
 .css__main-left, .cms__main-right{
     padding: 0 16px;
 }
+@keyframes imgMoving {
+    0% { transform: translateY(-5px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-5px); }
+}
 .cms__main-right>img{
     width: 636px;
+    animation-name: imgMoving;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; /* 무한 반복 */
+    animation-delay: 1s;
 }
 
-
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 6 * 8)); /* 8개의 이미지가 6열 너비를 넘어가도록 이동 */
+    }
+}
+.cms__main__underBar{
+    height: 72px;
+    margin: 12px 0;
+}
 .cms__underBar{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 10px; 
+    animation: scroll 15s linear infinite; 
+    margin: 0 auto;
+    padding: 0 10px;
 }
-.cms__underBarImageContainer{
-
+.cms__underBar .cms__underBar-image{
+    max-width: 70%;
+    max-height: 100px;
+    object-fit: contain; 
 }
 
 
-
-
-
-
-
-
-
-
-.kes--testimonials-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#cms2{
+    max-width: 1320px;
+    margin: 60px auto;
 }
-.kes--header-title {
-    color: #37517e;
-    font-size: 32px;
-    font-weight: 700;
+.cms__usDescription{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 12px 0;
+}
+#cms2 .kes--header-description{
+    margin-bottom: 16px;
+    font-size: 16.5px;
+}
+
+#cms2 .kes--header-description, #cms2 li{
+    text-align: left;
+}
+#cms2 li{
+    padding-bottom: 5px;
+}
+#cms2 li .kes--header-description{
+    display: inline;
+    line-height: 1.8;
+}
+
+.cms__readmore_par{
     position: relative;
-    margin: 0;
 }
-.kes--header-divider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+#cms2 .cms-readmore{
+    border: 2px solid #47b2e4;
+    
+    color: #47b2e4;
+    padding: 10px 34px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
     align-items: center;
-    padding: 16px;
+    justify-content: center;
 }
-.kes--header-divider > div:nth-child(1) {
-    width: 160px;
-    height: 1px;
-    background-color: #44444466;
+#cms2 .cms-readmore span{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 17px;
 }
-.kes--header-divider > div:nth-child(2) {
-    width: 60px;
-    height: 3px;
+
+#cms2 .cms-readmore svg{
+    position: relative;
+    top: 3px;
+    transform: scale(1.15);
+}
+#cms2 .cms-readmore:hover{
     background-color: #47b2e4;
-    position: relative;
-    top: -2px;
+    color: #ffffff;
+    transition: 0.7s ease;
+    
 }
-.kes--header-description {
-    color: #444444;
+#cms2 .cms-readmore:hover svg{
+    left: 2px;
+    transition: 0.2s ease;
+}
+
+
+
+#cms3{
+    margin: 60px 0;
+}
+.cms3__container{
+    display: flex;
+    flex-direction: column;
+}
+.cms3__upperPage{
+    padding: 3% 12px 0 12px;
+    background-color: #f5f6f8;
+}
+.cms3__upleft{
+    width: 90%;
+    padding: 0 48px;
+}
+.cms3__container .cms3__upperPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cms3__upleft h2, .cms3__downRight h2{
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 500;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+#cms3 .cms3__upleft .kes--header-description, #cms3 .cms3__downRight .kes--header-description{
+    margin-bottom: 1rem;
+    color: #888989;
+    line-height: normal;
+}
+.cms3__upleft h2 strong, .cms3__downRight h2 strong{
+    font-weight: 700;
+}
+
+.cms3__upleft__box{
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.cms3__upleft__box>label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cms3 .cms3__upleft__box h3{
+    display: inline;
+    font-size: 17px;
+    font-family: var(--heading-font);
     line-height: 24px;
-    margin: 0;
+    font-weight: 500;
+    color: #37517e;
+}
+#cms3 .cms3__upleft__box h3:hover, #cms3 .cms3__upleft__box svg:hover{
+    transition: ease 0.5s;
+    color: #47b2e4;
+    cursor: pointer;
+}
+#cms3 .cms3__upleft__box h3 .cms_leftBoxNum{
+    color: #47b2e4;
+    padding-right: 5px;
+    font-weight: 600;
+}
+#cms3 .cms3__toggle + label + p{
+    color: #4a4444;
+    max-height: 0; 
+    overflow: hidden; 
+    padding: 0;
+    line-height: normal;
+    transition: 0.3s ease-in-out; 
+}
+#cms3 .cms3__toggle:checked + label + p {
+    max-height: 200px;
+    padding: 10px 0 0 0;
+    display: block;
+}
+
+#cms3 .cms3__upleft__box .cms3__toggle{
+    display: none;
+}
+#cms3 .cms3__toggle:checked + label>h3{
+    color: #47b2e4;
+}
+#cms3 .cms3__toggle:checked + label>svg{
+    color: #47b2e4;
+    transform: rotate(90deg);
+}
+.cms3__upright{
+    text-align: center;
+    margin: 3% 0 5% 0;
+}
+.cms3__upperPage .cms3__upright img{
+    width: 70%;
+}
+
+#cms3 .cms3__container .cms3__downPage{
+    padding: 60px 12px 0;
+    margin: 0 6%;
+}
+.cms3__downPage h2{
+    line-height: 1.1;
+}
+.cms3__downCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cms3__downleft, .cms3__downRight{
+    width: 670px;
+}
+.cms3__downleft img{
+    position: relative;
+    left: 15px;
+    width: 95%;
+}
+.cms3__percent{
+    position: relative;
+    height: 60px;
+}
+.cms3__percent> span{
+    font-size: 12px;
+    font-family: var(--heading-font);
+    color: #444444;
+    font-weight: 600;   
+}
+.cms3__percent> span:last-of-type{
+    position: absolute;
+    right: 0;
+}
+.cms3__percent .cms__bar{
+    height: 10px;
+    background-color: #ebedf2;
+    margin-top: 10px;
+}
+.cms3__percent .cms__bar .cms__barPercent{
+    height: 100%;
+    background: #37517e;
+}
+/* 시작과 끝점만 정의 */
+@keyframes slidein100 {
+    from { 
+        width: 0%; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+.cms3__percent .cms__bar .p100{
+    width: 100%;
+    animation-name: slidein100;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes slidein90 {
+    from { 
+        width: 0%; 
+    }
+    to { 
+        width: 90%; 
+    }
+}
+.cms3__percent .cms__bar .p90{
+    width: 90%; 
+    animation-name: slidein90;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes slidein75 {
+    from { 
+        width: 0%; 
+    }
+    to { 
+        width: 75%; 
+    }
+}
+.cms3__percent .cms__bar .p75{
+    width: 75%; 
+    animation-name: slidein75;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes slidein55 {
+    from { 
+        width: 0%; 
+    }
+    to { 
+        width: 55%; 
+    }
+}
+.cms3__percent .cms__bar .p55{
+    width: 55%;
+    animation-name: slidein55;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
