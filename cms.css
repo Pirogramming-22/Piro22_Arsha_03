@@ -1,0 +1,133 @@
+@import "./reset.css";
+
+*{
+    box-sizing: border-box;
+}
+
+.cms__main__container{
+    background-color: #37517e;
+    
+}
+
+.cms__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0 60px;
+    max-width: 1320px;
+    margin: 0 auto; 
+}
+.cms__main__underBar .cms__underBar{
+    max-width: 1320px;
+    margin: 0 auto; 
+}
+.cms__main__underBar .cms__underBar img{
+    padding: 0;
+}
+.cms__main-left h1{
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 1000;
+    line-height: 1.2;   
+}
+.cms__main-left p{
+    color: #c3cbd9;
+    margin: 5px 0 30px 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#cms__firsta{
+    background-color: #47b2e4;
+    color: #ffffff;
+    padding: 10px 28px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: filter 0.7s ease;
+}
+#cms__firsta:hover{
+    filter: brightness(0.85);
+}
+#cms__seconda{
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+#cms__seconda:hover{
+    color:#47b2e4;
+}
+#cms__seconda svg{
+    position: relative;
+    top: 10px;
+}
+.cms__main-left>div{
+    padding-top: 16px;
+}
+.css__main-left, .cms__main-right{
+    padding: 0 16px;
+}
+.cms__main-right>img{
+    width: 636px;
+}
+
+
+.cms__underBar{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.cms__underBarImageContainer{
+
+}
+
+
+
+
+
+
+
+
+
+
+.kes--testimonials-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kes--header-title {
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+}
+.kes--header-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.kes--header-divider > div:nth-child(1) {
+    width: 160px;
+    height: 1px;
+    background-color: #44444466;
+}
+.kes--header-divider > div:nth-child(2) {
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    position: relative;
+    top: -2px;
+}
+.kes--header-description {
+    color: #444444;
+    line-height: 24px;
+    margin: 0;
+}
