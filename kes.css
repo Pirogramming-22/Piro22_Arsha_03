@@ -220,6 +220,12 @@
     align-items: center;
     gap: 20px;
 }
+.kes--question-card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .kes--questions-body-card {
     display: flex;
     flex-direction: column;
@@ -228,6 +234,9 @@
     padding: 20px;
     background-color: #ffffff;
     gap: 10px;
+    overflow: hidden;
+    max-height: 25px;
+    transition: 0.3s ease-in-out;
 }
 .kes--questions-body-card-header {
     display: flex;
@@ -264,8 +273,6 @@
     height: 16px;
     fill: #444444;
     cursor: pointer;
-    position: relative;
-    top: -5px;
     transition: 0.3s;
 }
 .kes--questions-body-card-header > label:nth-child(3) > svg:hover {
@@ -274,23 +281,28 @@
     transition: 0.3s;
 }
 .kes--questions-body-card-description {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     text-align: left;
     margin: 0;
     color: #444444;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
+    transition: 0.3s ease-in-out;
 }
 /* 토글 관련 */
-.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card-header > label:nth-child(2) > h3 {
+.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card > .kes--questions-body-card-header > label:nth-child(2) > h3 {
     color: #47b2e4;
 }
-.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card-header > label:nth-child(3) > svg {
+.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card > .kes--questions-body-card-header > label:nth-child(3) > svg {
     fill: #47b2e4;
     transform: rotate(90deg);
-    transition: 0.3s;
 }
-.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card-description {
-    display: block;
+.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card > .kes--questions-body-card-description {
+    opacity: 1;
+    visibility: visible;
+}
+.kes--toggle-card-checkbox:checked ~ .kes--questions-body-card {
+    max-height: 250px;
 }
