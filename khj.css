@@ -1,5 +1,17 @@
 @import "./reset.css";
 
+@media (min-width: 1400px) {
+  .kes--testimonials-header .khj-container {
+    max-width: 1320px;
+  }
+}
+
+.khj-hidden{
+  z-index: -10;
+  position: absolute;
+  visibility: hidden;
+}
+
 .kes--testimonials-header {
   display: flex;
   flex-direction: column;
@@ -40,6 +52,14 @@
   line-height: 24px;
   margin: 0;
 }
+.khj-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .khj-menu{
   display: flex;
   flex-direction: row;
@@ -47,16 +67,182 @@
   align-items: center;
   text-align: center;
 }
-.khj-selected{
-  background-color: #47b2e4;
-  color: white;
+
+.khj-menu-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
 }
-.khj-menu-deco{
+
+.khj-menu-container input[type="radio"] {
+  display: none;
+}
+
+.khj-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.custom-khj-radio {
   padding: 8px 20px 10px 20px;
   cursor: pointer;
   font-size: 15px;
   margin: 0;
   margin-bottom: 5px;
   border-radius: 15px;
-  font-family: "Jost", sans-serif;;
+}
+
+/* 선택되지 않은 상태 */
+.khj-menu-container input[type="radio"]:not(:checked) + .custom-khj-radio {
+  background-color: white;
+}
+
+/* 선택된 상태 */
+.khj-menu-container input[type="radio"]:checked + .custom-khj-radio {
+  background-color: #47b2e4;
+  color: white;
+}
+/*hover*/
+.khj-menu-container input[type="radio"]:hover + .custom-khj-radio {
+  animation-duration: 1s;
+  animation-name: khj-background-appear;
+}
+@keyframes khj-background-appear {
+  from {
+    background-color: white;
+    color:black;
+  }
+
+  to {
+    background-color: #47b2e4;
+    color: white;
+  }
+}
+
+/*zoom in zoom out animation 만들어야 함*/
+
+.khj-gridcontainer{
+  display: grid;
+  grid-template-columns: repeat(3, 33.333333%);
+  gap:15px;
+  width: 1320px;
+}
+
+.khj-col{
+  display: flex;
+  flex-direction: column;
+  align-items:space-around;
+  gap: 15px;
+}
+
+.khj-img-container{
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+@keyframes come-up {
+  from {
+    z-index: -10;
+    visibility: hidden;
+    transform: translateY(100%);
+    width: 100%;
+    opacity: 0;
+  }
+  to {
+    z-index: 10;
+    visibility: visible;
+    transform: translateY(0);
+    bottom:0;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes go-down {
+  from {
+    z-index: 10;
+    visibility: visible;
+    transform: translateY(0);
+    bottom:0;
+    width: 100%;
+    opacity: 1;
+  }
+
+  to {
+    z-index: -10;
+    visibility: hidden;
+    transform: translateY(100%);
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.khj-img-container:hover .khj-img-description{
+  animation: come-up 0.7s;
+  bottom:0;
+  width: 100%;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+
+.khj-img-container:not(:hover) .khj-img-description{
+  animation: go-down 0.7s;
+}
+
+.khj-img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  z-index: -5;
+}
+
+.khj-img-description{
+  background: color-mix(in srgb, white 80%, transparent 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.khj-left-description{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-inline: 15px;
+}
+
+.khj-img-description h4{
+  color: #37517e;
+  font-size: large;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.khj-right-description{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.khj-description-icon{
+  width: 30px;
+  filter: invert(71%) sepia(0%) saturate(7440%) hue-rotate(211deg) brightness(79%) contrast(81%);
+}
+
+.khj-description-icon:hover{
+  filter: invert(68%) sepia(65%) saturate(1589%) hue-rotate(169deg) brightness(93%) contrast(92%);
+}
+
+.khj-img:hover .khj-img-description{
+  display: flex;
 }
