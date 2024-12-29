@@ -1,5 +1,5 @@
 @import "./reset.css";
-
+/*section 별로 margin 존재 구현 필요*/
 @media (min-width: 1400px) {
   .kes--testimonials-header .khj-container {
     max-width: 1320px;
@@ -52,12 +52,18 @@
   line-height: 24px;
   margin: 0;
 }
+
 .khj-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 12px;
+}
+
+.khj-layout{
+  padding: inherit;
 }
 
 .khj-menu{
@@ -74,7 +80,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 2px;
+  gap: 4px;
 }
 
 .khj-menu-container input[type="radio"] {
@@ -124,6 +130,82 @@
   }
 }
 
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer{
+  transform: scaleY(0);
+  transform: scalex(1);
+  visibility: hidden;
+  position: relative;
+  /*overflow: visible;*/
+}
+/*애니메이션 다시 설정*/
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col .khj-App {
+  position:relative;
+  visibility: visible;
+}
+
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col {
+  display:inline-flex;
+  overflow:visible;
+}
+
+/*.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer {
+  display:flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer div :nth-of-type(1){
+  margin-right: 15px;
+}
+
+@keyframes khj-fadeout {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes khj-flex-direction-change{
+  from {
+    flex-direction: column;
+  }
+
+  to {
+    flex-direction: row;
+    flex: wrap;
+  }
+}
+
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer > .khj-col {
+  animation: khj-flex-direction-change 0.2s ease-in-out forwards;
+  flex-direction: row;
+  flex-direction: row;
+  flex: wrap;
+  .khj-App{
+    flex:1;
+  }
+  .khj-img-container{
+    height: auto;
+    margin-bottom: auto;
+  }
+}
+
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col > div:not(.khj-App) {
+  animation: fadeOut 1s forwards;
+  opacity: 0;
+  transform: scale(0);
+  display: none;
+}
+
+.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col .khj-App{
+  opacity: 1;
+  transform: scale(1);
+}*/
+
 /*zoom in zoom out animation 만들어야 함*/
 
 .khj-gridcontainer{
@@ -146,7 +228,7 @@
   overflow: hidden;
 }
 
-@keyframes come-up {
+@keyframes khj-come-up {
   from {
     z-index: -10;
     visibility: hidden;
@@ -164,7 +246,7 @@
   }
 }
 
-@keyframes go-down {
+@keyframes khj-go-down {
   from {
     z-index: 10;
     visibility: visible;
@@ -184,16 +266,11 @@
 }
 
 .khj-img-container:hover .khj-img-description{
-  animation: come-up 0.7s;
-  bottom:0;
-  width: 100%;
-  opacity: 1;
-  z-index: 10;
-  visibility: visible;
+  animation: khj-come-up 0.5s forwards;
 }
 
 .khj-img-container:not(:hover) .khj-img-description{
-  animation: go-down 0.7s;
+  animation: khj-go-down 0.5s forwards;
 }
 
 .khj-img{
@@ -245,4 +322,164 @@
 
 .khj-img:hover .khj-img-description{
   display: flex;
+}
+
+/*---------------------------------------Team css-------------------------------------------------*/
+
+.khj-container-2-wrapper{
+  justify-items: center;
+}
+
+.khj-container-2{
+  display:grid;
+  grid-template-columns: repeat(2, 45%);
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 0 12px;
+  width: 100%;
+  /*width: 960px;*/
+}
+
+.khj-person-info-card{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  gap: 30px;
+}
+
+@keyframes khj-item-up{
+  from{
+    top: 0;
+  }
+  to{
+    top: -10px;
+  }
+}
+
+@keyframes khj-item-down{
+  from{
+    top: -10px;
+  }
+  to{
+    top: 0;
+  }
+}
+
+.khj-person-info-card:hover{
+  animation: khj-item-up 0.5s ease-in-out forwards;
+}
+
+.khj-person-info-card:not(:hover){
+  animation: khj-item-down 0.5s ease-in-out forwards;
+}
+
+.khj-person-info-card h4{
+  color:#37517e;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.khj-person-info-card p{
+  text-align: left;
+}
+
+.khj-person-img-container{
+  width: 150px;
+  height: 150px;
+  /*overflow: hidden;*/
+  border-radius: 50%;
+}
+
+.khj-person-img-container > img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.khj-person-info-container{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  color: #444444;
+}
+
+.khj-person-info-container p{
+  color: #444444;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.khj-person-info-container div{
+  font-weight:lighter;
+  font-size: 14px;
+}
+
+.khj-line{
+  height: 1px;
+  background:color-mix(in srgb,black, transparent 85%);;
+  border: color-mix(in srgb,black, transparent 85%);;
+  width: 15%;
+  filter: brightness();
+}
+
+.khj-sns-container{
+  display:flex;
+  flex-direction: row;
+  gap:8px;
+}
+
+.khj-sns-logo-container{
+  width: 36px;
+  height: 36px;
+  background: color-mix(in srgb, black, transparent 94%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.khj-sns-logo-container:first-of-type > img{
+  width: auto;
+  height: 17px;
+}
+
+.khj-sns-logo-container > img{
+  width: auto;
+  height: 20px;
+  filter: invert(20%) sepia(92%) saturate(1%) hue-rotate(312deg) brightness(98%) contrast(104%);
+}
+
+@keyframes khj-sns-logo-contrast {
+  from {
+    background: color-mix(in srgb, black, transparent 94%);
+  }
+
+  to {
+    background: #47b2e4;
+  }
+}
+
+@keyframes khj-sns-logo-contrast-2 {
+  from {
+    filter: invert(20%) sepia(92%) saturate(1%) hue-rotate(312deg) brightness(98%) contrast(104%);
+  }
+
+  to {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+  }
+}
+
+.khj-sns-logo-container:hover {
+  animation: khj-sns-logo-contrast 0.5s ease-in-out forwards;
+}
+
+.khj-sns-logo-container:hover > img {
+  animation: khj-sns-logo-contrast-2 0.5s ease-in-out forwards;
 }
