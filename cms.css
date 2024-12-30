@@ -8,6 +8,10 @@
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--default-font);
 }
