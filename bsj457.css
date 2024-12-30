@@ -394,16 +394,9 @@ body {
     align-content:center;
     height: max-content;
     margin: 0 auto;
-    
+
     --background-color: #f5f6f8;
-    --surface-color: #ffffff;
-    
-    color: var(--default-color);
-    background-color: var(--background-color);
-    padding: 60px 0;
-    scroll-margin-top: 88px;
-    overflow: clip;
-    
+
 }
 #bsj-seventh-main{
     padding-right: calc(1.5rem* .5);
