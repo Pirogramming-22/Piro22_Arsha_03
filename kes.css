@@ -60,10 +60,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 960px;
-    height: 302.3px;
+    width: 1140px;
+    height: 318.3px;
     padding-inline: 12px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
 }
 @keyframes kes__slide {
@@ -87,6 +88,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
+    width: 1116.010px;
 }
 .kes--testimonials-body-humaninfo:nth-child(1) {
     animation: kes__slide 25s infinite;
@@ -129,17 +131,22 @@
     font-weight: bold;
     color: #37517e;
     line-height: 24px;
+    width: 100%;
+    text-align: center;
 }
 .kes--testimonials-body-humaninfo-job {
     margin: 0;
     font-size: 14px;
     color: color-mix(in srgb, #444444, transparent 40%);
+    width: 100%;
+    text-align: center;
 }
 .kes--testimonials-body-humaninfo-stars {
     display: flex;
     justify-content: center;
     gap: 2px;
     margin-block: 15px;
+    width: 100%;
 }
 .kes--testimonials-body-humaninfo-stars > .kes--star-icon {
     height: 16px;
@@ -159,6 +166,7 @@
     width: 850px;
     text-align: center;
     font-style: italic;
+    width: 100%;
 }
 .kes--testimonials-body-humaninfo-description::before {
     content: url(./svgs/quote_left.svg);
@@ -216,7 +224,7 @@
     display: flex;
     flex-direction: column;
     background-color: #f5f6f8;
-    padding-block: 60px;
+    /*padding-block: 60px;*/
     align-items: center;
 }
 .kes--questions-body {
@@ -227,7 +235,7 @@
 }
 
 .kes--questions-cards-container {
-    width: 736px;
+    width: 950px;
     padding-inline: 12px;
     display: flex;
     flex-direction: column;
@@ -249,7 +257,7 @@
     background-color: #ffffff;
     gap: 10px;
     overflow: hidden;
-    max-height: 25px;
+    max-height: 65px;
     transition: 0.3s ease-in-out;
 }
 .kes--questions-body-card-header {
@@ -258,6 +266,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.kes-sns-logo-container a{
+    background:transparent;
+}
+
 .kes--questions-body-card-header > svg:nth-child(1) {
     width: 20px;
     height: 20px;
@@ -285,7 +298,7 @@
 .kes--questions-body-card-header > label:nth-child(3) > svg {
     width: 16px;
     height: 16px;
-    fill: #444444;
+    /*fill: #444444;*/
     cursor: pointer;
     transition: 0.3s;
 }
