@@ -324,7 +324,12 @@ body {
 #bsj5{
     padding: 120px 51.5px;
     background: transparent;
-    display:inline-flex;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: var(--bs-body-line-height);
+  
+    
 }
 
 #bsj5::before{
@@ -347,9 +352,11 @@ body {
     
 }
 #bsj-calltoaction{
-    width: 60%;
+  
     padding-right: calc(1.5rem* .5);
     padding-left: calc(1.5rem* .5);
+    width: 75%;
+    
     
 }
 #bsj-calltoaction-title{
@@ -368,3 +375,35 @@ body {
     padding: 0 12px;
 
 }
+
+#bsj-callocation-button-wrap{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 330px;
+  
+    right:20px;
+    text-align: center;
+    padding: 0 12px;
+}
+
+#bsj-callocation-button{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid var(--contrast-color);
+    color: var(--contrast-color);
+    text-decoration: none;
+}
+
+
+#bsj-callocation-button:hover{
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
