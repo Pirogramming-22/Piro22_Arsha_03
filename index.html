@@ -1119,12 +1119,17 @@
                 </div>
                 <div class="contact-form">
                     <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-                        <input type="submit" value="Send your message">
-                    
+                        <div class="ktr-form-details">Your Name</div>
+                        <input type="text" name="name"  required>
+                        <div class="ktr-form-details">Your Email</div>
+                        <input type="email" name="email" required>
+                        <div class="ktr-form-details">Subject</div>
+                        <input type="text" name="subject" >
+                        <div class="ktr-form-details">Message</div>
+                        <textarea name="message" rows="6"></textarea>
+                        <div id="sendyourm">
+                            <input type="submit" id="ktr-send" value="Send message">
+                        </div>
                         <!-- <button type="submit">Send Message</button> -->
                         <!-- <input type="submit" value="Send your message"> -->
                     </form>
