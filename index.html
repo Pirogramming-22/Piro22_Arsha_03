@@ -65,22 +65,22 @@
                 </div>
                 <div class="cms__header__nav">
                     <ul>
-                        <li><a class="cms__navMenu" href="#">Home</a></li>
-                        <li><a class="cms__navMenu" href="#">About</a></li>
-                        <li><a class="cms__navMenu" href="#">Services</a></li>
-                        <li><a class="cms__navMenu" href="#">Portfolio</a></li>
-                        <li><a class="cms__navMenu" href="#">Team</a></li>
-                        <li><a class="cms__navMenu" href="#">Pricing</a></li>
-                        <li><a class="cms__navMenu" href="#">
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Home</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">About</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Services</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Portfolio</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Team</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Pricing</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">
                             Dropdown
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                             </svg>
                         </a></li>
-                        <li><a class="cms__navMenu" href="#">Contact</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Contact</a></li>
                         <li><a class="cms__navMenu" id="cms_getStart" href="#">Get Started</a></li>
                     </ul>
-                    <div class="hamburger"><a href="">☰</a></div>
+                    <div class="cms__hamburger">☰</div>
                 </div>
             </div>
         </header>
@@ -360,7 +360,17 @@
             <a id="bsj-callocation-button" href="#">Call To Action</a>
         </div>
     </section>
-    <section id="khj6-1"> 
+    <section id="khj6-1">
+            <div class="khj-lightbox" id="khj-App-lightbox">
+                <div class="lightbox-content">
+                  <button class="lightbox-prev">←</button>
+                  <img src="./img/masonry-portfolio-1.jpg" alt="Sample Image">
+                  <button class="lightbox-next">→</button>
+                </div>
+                <div class="lightbox-caption">App 2</div>
+            </div>
+        <div class="khj-hidden-img-scale-up" id="khj-Branding-scale-up"></div>
+        <div class="khj-hidden-img-scale-up" id="khj-Product-scale-up"></div>
         <div class="kes--testimonials-header">
             <h2 class="kes--header-title">Portfolio</h2>
             <div class="kes--header-divider">
@@ -388,7 +398,7 @@
                     <input type="radio" name="options" value="Web" id="khj-Web">
                     <div class="custom-khj-radio">Web</div>
                   </label>
-            </form>
+              </form>
             <div class="khj-flexcontainer">
                 <div class="khj-col">
                   <div class="khj-img-container khj-App">
@@ -515,11 +525,9 @@
                       </div>
                   </div>
                 </div>
-            </div>
+              </div>
           </div>
         </div>
-
-
     </section>
     <section id="khj6-2">
         <div class="kes--testimonials-header">
@@ -663,7 +671,8 @@
             </div>
 
 
-            <!--두번쨰카드--><div class="bsj-seventh-maincard" id="bsj-seventh-maincard-2">
+            <!--두번쨰카드-->
+            <div class="bsj-seventh-maincard" id="bsj-seventh-maincard-2">
             
                 <div class="bsj-fourth-maincard-title">Business Plan</div>
                 <div class="bsj-price">
@@ -921,11 +930,11 @@
                 </div>
             </div>
             <div class="kes--testimonials-body-buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
             </div>
         </div>
     </section>
@@ -1050,11 +1059,11 @@
                         </p>
                     </div>
                 </div>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
             </div>
         </div>
     </section>
