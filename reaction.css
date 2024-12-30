@@ -1,5 +1,14 @@
 @media (max-width: 1200px) {
     /*cms*/
+    #cms1 .cms__main{
+        width: 80%;
+    }
+    #cms1 .cms__main-right{
+        margin-left: 30px;
+    }
+    #cms1 .cms__main-right>img{
+        width: 110%;
+    }
     #cms1 .cms__header1{
         height: 66px;
     }
@@ -15,7 +24,19 @@
         align-items: center;
         gap: 24px;
     }
-
+    #cms1 .cms__underBarBox{
+        margin:0;
+        width: 100%;
+    }
+    #cms1 .cms__liGetStart{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    @media(max-width: 1025px){
+        #cms1 .cms_devices{
+            display: none;
+        }
+    }
     /*kes*/
     .kes--testimonials-humaninfo-container {
         width: 960px;

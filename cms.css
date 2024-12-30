@@ -25,7 +25,6 @@ body {
     position: relative;
     margin: 0;
     font-family: var(--heading-font);
-    
 }
 .cms_kes--header-divider {
     display: flex;
@@ -51,11 +50,9 @@ body {
     line-height: 24px;
     margin: 0;
 }
-
 #cms1{
     padding:0;
 }
-
 #cms1> header{
     z-index: 2000;
     background-color:  rgba(55, 81, 126, 0.9);
@@ -73,14 +70,12 @@ body {
     padding: 0;
     font-weight: 600;
 }
-
 #cms1>header .cms__header21, #cms1>header .cms__header22, #cms1>header .cms__header23{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-
 #cms1 .cms__header2 svg{
     fill: #819db6;
     cursor: pointer;
@@ -103,11 +98,9 @@ body {
 #cms1>header .cms__header21 .cms_devices svg{
     margin-left: 10px;
 }
-
 #cms1>header .cms__header22{
     gap: 15px;
 }
-
 #cms1>header .cms__header23{
     height: 32px;
     padding: 0 10px;
@@ -172,7 +165,10 @@ body {
 }
 
 #cms1 .cms__header1 .cms__hamburger{
+    font-size: 25px;
+    margin-right: 15px;
     display: none;
+    cursor: pointer;
 }
 
 
