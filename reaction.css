@@ -1,5 +1,27 @@
+@media (max-width: 1200px) {
+    /*kes*/
+    .kes--testimonials-humaninfo-container {
+        width: 960px;
+    }
+    .kes--testimonials-body-humaninfo {
+        width: 936.007px;
+    }
+    .kes--questions-cards-container {
+        width: 776px;
+    }
+}
 @media (max-width: 991px) {
     /*kes*/
+    .kes--testimonials-humaninfo-container {
+        width: 720px;
+    }
+    .kes--testimonials-body-humaninfo {
+        width: 696.007px;
+    }
+    .kes--questions-cards-container {
+        width: 696px;
+    }
+    
     /*bsj*/
     #bsj-fourth-main{
         grid-template-columns: 1fr 1fr;
@@ -17,10 +39,19 @@
         grid-template-columns: 1fr; 
         gap: 24px;
     }
-        
+    
 }
 @media (max-width: 767px) {
     /*kes*/
+    .kes--testimonials-humaninfo-container {
+        max-width: 540px;
+    }
+    .kes--testimonials-body-humaninfo {
+        max-width: 516.007px;
+    }
+    .kes--questions-cards-container {
+        max-width: 516px;
+    }
     /*bsj*/
     #bsj-fourth-main {
         grid-template-rows: repeat(4, 1fr); 
