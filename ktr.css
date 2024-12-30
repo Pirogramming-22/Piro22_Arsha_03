@@ -25,6 +25,7 @@ body {
 }
 .ktr-header-title {
     color: #37517e;
+    font-family: "Jost", sans-serif;;
     font-size: 32px;
     font-weight: 700;
     position: relative;
