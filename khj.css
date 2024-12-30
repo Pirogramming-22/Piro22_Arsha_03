@@ -6,7 +6,9 @@
     max-width: 1320px;
   }
 }
-
+html{
+  width:100vw;
+}
 section{
   padding-top: 60px;
 }
@@ -247,6 +249,10 @@ section{
 
 .khj-img:hover .khj-img-description{
   display: flex;
+}
+
+.khj-gridcontainer{
+  display:none;
 }
 
 /*---------------------------------------Team css-------------------------------------------------*/
