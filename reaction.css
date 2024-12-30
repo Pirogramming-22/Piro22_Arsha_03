@@ -1,5 +1,48 @@
 @media (max-width: 1200px) {
+
+    /*cms*/
+    #cms1 .cms__main{
+        width: 80%;
+    }
+    #cms1 .cms__main-right{
+        margin-left: 30px;
+    }
+    #cms1 .cms__main-right>img{
+        width: 110%;
+    }
+    #cms1 .cms__header1{
+        height: 66px;
+    }
+    #cms1 .cms__header1 .cms__hamburger{
+        display: block;
+    }
+    #cms1 .cms__header1 ul>.cms__navGone{
+        display: none;
+    }
+    #cms1 .cms__header__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    #cms1 .cms__underBarBox{
+        margin:0;
+        width: 100%;
+    }
+    #cms1>header .cms__header1 .cms__header__nav>ul>li:last-of-type {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    @media(max-width: 1025px){
+        #cms1 .cms_devices{
+            display: none;
+        }
+    }
     /*kes*/
+    .kes--header-title, .kes--header-description {
+        max-width: 960px;
+    }
+
     .kes--testimonials-humaninfo-container {
         width: 960px;
     }
@@ -9,6 +52,20 @@
     .kes--questions-cards-container {
         width: 776px;
     }
+
+    /*khj*/
+    .khj-container-2{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0 40px;
+        width: 100%;
+        /*width: 960px;*/
+    }
+
 }
 @media (max-width: 991px) {
     /*cms*/
@@ -40,6 +97,11 @@
         gap: 24px;
     }
     /*kes*/
+
+    .kes--header-title, .kes--header-description {
+        max-width: 708px;
+    }
+
     .kes--testimonials-humaninfo-container {
         width: 720px;
     }
@@ -63,10 +125,24 @@
         text-align: center;
     }
     #bsj-seventh-main{
-        grid-template-rows: repeat(4, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
         grid-template-columns: 1fr; 
         gap: 24px;
     }
+
+    /*Khj*/
+    .khj-container-2{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0 40px;
+        width: 100%;
+        /*width: 960px;*/
+    }
+
     
 }
 @media (max-width: 767px) {
@@ -85,6 +161,11 @@
         width: 90%;
     }
     /*kes*/
+
+    .kes--header-title, .kes--header-description {
+        max-width: 540px;
+    }
+
     .kes--testimonials-humaninfo-container {
         max-width: 540px;
     }
@@ -96,11 +177,25 @@
     }
     /*bsj*/
     #bsj-fourth-main {
-        grid-template-rows: repeat(4, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
         grid-template-columns: 1fr; 
         gap: 24px;
         margin:0 auto;
     }
+
+    /*khj*/
+    .khj-container-2{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0 40px;
+        width: 100%;
+        /*width: 960px;*/
+    }
+
 }
 
 

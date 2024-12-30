@@ -29,7 +29,6 @@ body {
     position: relative;
     margin: 0;
     font-family: var(--heading-font);
-    
 }
 .cms_kes--header-divider {
     display: flex;
@@ -55,11 +54,9 @@ body {
     line-height: 24px;
     margin: 0;
 }
-
 #cms1{
     padding:0;
 }
-
 #cms1> header{
     z-index: 2000;
     background-color:  rgba(55, 81, 126, 0.9);
@@ -77,14 +74,12 @@ body {
     padding: 0;
     font-weight: 600;
 }
-
 #cms1>header .cms__header21, #cms1>header .cms__header22, #cms1>header .cms__header23{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-
 #cms1 .cms__header2 svg{
     fill: #819db6;
     cursor: pointer;
@@ -107,11 +102,9 @@ body {
 #cms1>header .cms__header21 .cms_devices svg{
     margin-left: 10px;
 }
-
 #cms1>header .cms__header22{
     gap: 15px;
 }
-
 #cms1>header .cms__header23{
     height: 32px;
     padding: 0 10px;
@@ -164,8 +157,7 @@ body {
     color: #47b2e4;
 }
 #cms1>header .cms__header1 .cms__header__nav>ul>li:last-of-type{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:7px 20px;
     background-color: #47b2e4;
     border-radius: 20px;
     transition: 0.4s ease;
@@ -174,9 +166,14 @@ body {
     filter: brightness(95%);
     color: #ffffff;
 }
-#cms1 .cms__header__nav .hamburger{
+
+#cms1 .cms__header1 .cms__hamburger{
+    font-size: 25px;
+    margin-right: 15px;
     display: none;
+    cursor: pointer;
 }
+
 
 .cms__main__container{
     background-color: #37517e;
@@ -187,7 +184,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 0 60px;
+    padding: 160px 0 60px;
     max-width: 1320px;
     margin: 0 auto; 
 }
