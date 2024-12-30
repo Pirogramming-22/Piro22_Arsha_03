@@ -288,54 +288,6 @@ section{
   animation: khj-fadeout 1s forwards ease-in-out;
 }
 
-
-/*애니메이션 다시 설정*/
-/*.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col .khj-App {
-  position: relative;
-}*/
-
-/*.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col .khj-App:nth-of-type(2) {
-  visibility: visible;
-  right:100%;
-  margin-right:15px;
-  
-}*/
-
-/*.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer {
-  display:flex;
-  flex-direction: row;
-  gap: 0;
-}
-
-.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer div :nth-of-type(1){
-  margin-right: 15px;
-}
-
-.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer > .khj-col {
-  animation: khj-flex-direction-change 0.2s ease-in-out forwards;
-  flex-direction: row;
-  flex: wrap;
-  .khj-App{
-    flex:1;
-  }
-  .khj-img-container{
-    height: auto;
-    margin-bottom: auto;
-  }
-}
-
-.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col > div:not(.khj-App) {
-  animation: fadeOut 1s forwards;
-  opacity: 0;
-  transform: scale(0);
-  display: none;
-}
-
-.khj-menu-container:has(#khj-App:checked) + .khj-gridcontainer .khj-col .khj-App{
-  opacity: 1;
-  transform: scale(1);
-}*/
-
 /*zoom in zoom out animation 만들어야 함*/
 
 .khj-gridcontainer{
@@ -612,4 +564,148 @@ section{
 
 .khj-sns-logo-container:hover > img {
   animation: khj-sns-logo-contrast-2 0.3s ease-in-out forwards;
+}
+
+/*test code*/
+.khj-flexcontainer{
+  display: none;
+}
+
+.khj-menu-container:has(#khj-Web:checked) + .khj-gridcontainer{
+  display: none;
+}
+
+.khj-menu-container:has(#khj-Web:checked) + .khj-gridcontainer~.khj-flexcontainer{
+  display: flex;
+  width: 1320px;
+  gap: 15px;
+}
+.khj-flexcontainer > .khj-col{
+  flex:1;
+}
+/*Web 클릭 시*/
+
+@keyframes khj-fadeout1 {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  25% {
+    opacity: 0.75;
+    height: 75%;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+  }
+  75% {
+    opacity: 0.25;
+    height: 25%;
+  }
+  100% {
+    display:none;
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+@keyframes khj-fadein {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  25% {
+    display:flex;
+    opacity: 0.25;
+    height: 25%;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+  }
+  75% {
+    opacity: 0.75;
+    height: 75%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+
+  }
+}
+
+.khj-menu-container:has(#khj-Web:checked) + .khj-gridcontainer~.khj-flexcontainer .khj-col > div:not(.khj-Branding) {
+  animation: khj-fadeout1 0.5s forwards ease-in-out;
+}
+
+khj-menu-container:has(#khj-Web:checked) + .khj-gridcontainer~.khj-flexcontainer .khj-col > .khj-Branding {
+  animation: khj-fadein 0.5s forwards ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.khj-menu-container:has(#khj-Web:checked) + .khj-gridcontainer~.khj-flexcontainer{
+  display: flex;
+  flex-direction: row;
+  .khj-col:nth-of-type(1){
+    order:2;
+    flex:1;
+  }
+  .khj-col:nth-of-type(2){
+    order:3;
+    flex:1;
+  }
+  .khj-col:nth-of-type(3){
+    order:1;
+    flex:1;
+  }
+}
+
+/*Card 클릭 시*/
+.khj-menu-container:has(#khj-Card:checked) + .khj-gridcontainer~.khj-flexcontainer{
+  display: flex;
+  width: 1320px;
+  gap: 15px;
+}
+.khj-menu-container:has(#khj-Card:checked) + .khj-gridcontainer{
+  display: none;
+}
+.khj-menu-container:has(#khj-Card:checked) + .khj-gridcontainer~.khj-flexcontainer .khj-col>div:not(.khj-Product) {
+  animation: khj-fadeout1 0.5s forwards ease-in-out;
+  animation-delay: 0.5s;
+}
+
+khj-menu-container:has(#khj-Card:checked) + .khj-gridcontainer~.khj-flexcontainer .khj-col > .khj-Product {
+  animation: khj-fadein 0.5s forwards ease-in-out;
+}
+
+.khj-menu-container:has(#khj-Card:checked) + .khj-gridcontainer~.khj-flexcontainer{
+  display: grid;
+  grid-template-columns: 0fr 2fr 1fr;
+  .khj-col .khj-img-container{
+  height: fit-content;
+  }
+  /*.khj-col:nth-of-type(1){
+    display: none;
+  }*/
+  .khj-col:nth-of-type(2){
+    animation: khj-fadein 0.5s ease-in-out;
+    flex-direction: row;
+    gap: 15;
+  }
+  .khj-col:nth-of-type(3){
+    animation: khj-fadein 0.5s ease-in-out;
+    gap: 15;
+  }
+  .khj-col:nth-of-type(2) div:nth-of-type(1){
+    order:1;
+    flex:1;
+  }
+  .khj-col:nth-of-type(2) div:nth-of-type(2){
+    order:2;
+    flex:1;
+  }
+  .khj-col:nth-of-type(3) div:nth-of-type(4){
+    order:3;
+    flex:1;
+  }
 }
