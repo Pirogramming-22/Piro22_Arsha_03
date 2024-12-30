@@ -125,7 +125,7 @@
         text-align: center;
     }
     #bsj-seventh-main{
-        grid-template-rows: repeat(4, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
         grid-template-columns: 1fr; 
         gap: 24px;
     }
@@ -177,7 +177,7 @@
     }
     /*bsj*/
     #bsj-fourth-main {
-        grid-template-rows: repeat(4, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
         grid-template-columns: 1fr; 
         gap: 24px;
         margin:0 auto;
