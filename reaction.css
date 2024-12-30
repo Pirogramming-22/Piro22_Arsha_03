@@ -17,6 +17,9 @@
     }
 
     /*kes*/
+    .kes--header-title, .kes--header-description {
+        max-width: 960px;
+    }
     .kes--testimonials-humaninfo-container {
         width: 960px;
     }
@@ -69,6 +72,9 @@
         gap: 24px;
     }
     /*kes*/
+    .kes--header-title, .kes--header-description {
+        max-width: 708px;
+    }
     .kes--testimonials-humaninfo-container {
         width: 720px;
     }
@@ -127,6 +133,9 @@
         width: 90%;
     }
     /*kes*/
+    .kes--header-title, .kes--header-description {
+        max-width: 540px;
+    }
     .kes--testimonials-humaninfo-container {
         max-width: 540px;
     }
