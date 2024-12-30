@@ -347,11 +347,13 @@ body {
 
 
 #cms2{
-    max-width: 1320px;
+    width: 100%;
+    /*max-width: 1320px;*/
     /*margin: 60px auto;*/
     background: white;
 }
 .cms__usDescription{
+    max-width: 1320px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 60px 12px 0;
