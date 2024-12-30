@@ -1,4 +1,21 @@
 @media (max-width: 1200px) {
+    /*cms*/
+    #cms1 .cms__header1{
+        height: 66px;
+    }
+    #cms1 .cms__header1 .cms__hamburger{
+        display: block;
+    }
+    #cms1 .cms__header1 ul>.cms__navGone{
+        display: none;
+    }
+    #cms1 .cms__header__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
     /*kes*/
     .kes--testimonials-humaninfo-container {
         width: 960px;
