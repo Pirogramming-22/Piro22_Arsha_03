@@ -323,7 +323,7 @@ body {
 .cms__underBar{
     display: flex;
     align-items: center;
-    animation: slide-left 10s infinite; 
+    animation: slide-left 35s infinite; 
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
