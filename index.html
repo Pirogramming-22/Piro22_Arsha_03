@@ -302,7 +302,17 @@
     </section>
     <section id="bsj4"></section>
     <section id="bsj5"></section>
-    <section id="khj6">
+    <section id="khj6-1">
+            <div class="khj-lightbox" id="khj-App-lightbox">
+                <div class="lightbox-content">
+                  <button class="lightbox-prev">←</button>
+                  <img src="./img/masonry-portfolio-1.jpg" alt="Sample Image">
+                  <button class="lightbox-next">→</button>
+                </div>
+                <div class="lightbox-caption">App 2</div>
+            </div>
+        <div class="khj-hidden-img-scale-up" id="khj-Branding-scale-up"></div>
+        <div class="khj-hidden-img-scale-up" id="khj-Product-scale-up"></div>
         <div class="kes--testimonials-header">
             <h2 class="kes--header-title">Portfolio</h2>
             <div class="kes--header-divider">
@@ -313,18 +323,234 @@
         </div>
         <div class="khj-container">
           <div class="khj-layout">
-            <ul class="khj-menu">
-              <li class="khj-selected khj-menu-deco">All</li>
-              <li class="khj-menu-deco">App</li>
-              <li class="khj-menu-deco">Card</li>
-              <li class="khj-menu-deco">Web</li>
-            </ul>
-            <div class="khj-gridcontainer">
-              <div class="khj-col-1"></div>
-              <div class="khj-col-2"></div>
-              <div class="khj-col-3"></div>
-            </div>
+            <form class="khj-menu-container">
+                <label class="khj-radio">
+                  <input type="radio" name="options" value="All" id="khj-All" checked>
+                  <div class="custom-khj-radio">All</div> 
+                </label>
+                <label class="khj-radio">
+                  <input type="radio" name="options" value="App" id="khj-App">
+                  <div class="custom-khj-radio">App</div> 
+                </label>
+                <label class="khj-radio">
+                  <input type="radio" name="options" value="Card" id="khj-Card">
+                  <div class="custom-khj-radio">Card</div>
+                </label>
+                <label class="khj-radio">
+                    <input type="radio" name="options" value="Web" id="khj-Web">
+                    <div class="custom-khj-radio">Web</div>
+                  </label>
+              </form>
+            <div class="khj-flexcontainer">
+                <div class="khj-col">
+                  <div class="khj-img-container khj-App">
+                      <img src="./img/masonry-portfolio-1.jpg" alt="image1" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>App 1</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                            <a href="#">
+                                <img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img>
+                            </a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                        </div>
+                      </div>
+              </div>
+                  <div class="khj-img-container khj-Branding">
+                      <img src="./img/masonry-portfolio-6.jpg" alt="image6" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Branding 2</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="khj-col">
+                  <div class="khj-img-container khj-Product">
+                      <img src="./img/masonry-portfolio-2.jpg" alt="image2" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Product 1</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="khj-img-container khj-Product">
+                      <img src="./img/masonry-portfolio-5.jpg" alt="image5" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Product 2</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="khj-img-container khj-Branding">
+                      <img src="./img/masonry-portfolio-9.jpg" alt="image9" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Branding 3</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="khj-col">
+                  <div class="khj-img-container khj-Branding">
+                      <img src="./img/masonry-portfolio-3.jpg" alt="image3" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Branding 1</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="khj-img-container khj-App">
+                      <img src="./img/masonry-portfolio-4.jpg" alt="image4" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>App 2</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="khj-img-container khj-App">
+                      <img src="./img/masonry-portfolio-7.jpg" alt="image7" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>App 3</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="khj-img-container khj-Product">
+                      <img src="./img/masonry-portfolio-8.jpg" alt="image8" class="khj-img">
+                      <div class="khj-hidden khj-img-description">
+                          <div class="khj-left-description">
+                              <h4>Product 3</h4>
+                              <p>Lorem ipsum, dolor sit</p>
+                          </div>
+                          <div class="khj-right-description">
+                              <a href="#"><img class="khj-description-icon" src="./img/search_icon.png" alt="App1"></img></a>
+                              <a href="#"><img class="khj-description-icon" src="./img/link_icon.png" alt="More details"></img></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
           </div>
+        </div>
+    </section>
+    <section id="khj6-2">
+        <div class="kes--testimonials-header">
+            <h2 class="kes--header-title">Team</h2>
+            <div class="kes--header-divider">
+                <div></div>
+                <div></div>
+            </div>
+            <p class="kes--header-description">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <div class="khj-container-2-wrapper">
+            <div class="khj-container-2">
+                <div class="khj-person-info-card">
+                    <div class="khj-person-img-container">
+                        <img src="./img/team-1.jpg" alt="team-1">
+                    </div>
+                    <div class="khj-person-info-container">
+                        <h4>Walter White</h4>
+                        <p>Chief Executive Officer</p>
+                        <div class="khj-line"></div>
+                        <div>Explicabo voluptatem mollitia et repellat qui dolorum quasi</div>
+                        <div class="khj-sns-container">
+                            <a class="khj-sns-logo-container"><img src="./img/X logo.png" alt="x" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/Facebook logo.png" alt="facebook" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/instagram logo.png" alt="instagram" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/linkdin logo.png" alt="linkdin" class="khj-sns-logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="khj-person-info-card">
+                    <div class="khj-person-img-container">
+                        <img src="./img/team-2.jpg" alt="team-1">
+                    </div>
+                    <div class="khj-person-info-container">
+                        <h4>Sarah Jhonson</h4>
+                        <p>Product Manager</p>
+                        <div class="khj-line"></div>
+                        <div>Aut maiores voluptates amet et quis praesentium qui senda para</div>
+                        <div class="khj-sns-container">
+                            <a class="khj-sns-logo-container"><img src="./img/X logo.png" alt="x" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/Facebook logo.png" alt="facebook" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/instagram logo.png" alt="instagram" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/linkdin logo.png" alt="linkdin" class="khj-sns-logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="khj-person-info-card">
+                    <div class="khj-person-img-container">
+                        <img src="./img/team-3.jpg" alt="team-1">
+                    </div>
+                    <div class="khj-person-info-container">
+                        <h4>William Anderson</h4>
+                        <p>CTO</p>
+                        <div class="khj-line"></div>
+                        <div>Quisquam facilis cum velit laborum corrupti fuga rerum quia</div>
+                        <div class="khj-sns-container">
+                            <a class="khj-sns-logo-container"><img src="./img/X logo.png" alt="x" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/Facebook logo.png" alt="facebook" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/instagram logo.png" alt="instagram" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/linkdin logo.png" alt="linkdin" class="khj-sns-logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="khj-person-info-card">
+                    <div class="khj-person-img-container">
+                        <img src="./img/team-4.jpg" alt="team-1">
+                    </div>
+                    <div class="khj-person-info-container">
+                        <h4>Amanda Jepson</h4>
+                        <p>Accountant</p>
+                        <div class="khj-line"></div>
+                        <div>Dolorum tempora officiis odit laborum officiis et et accusamus</div>
+                        <div class="khj-sns-container">
+                            <a class="khj-sns-logo-container"><img src="./img/X logo.png" alt="x" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/Facebook logo.png" alt="facebook" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/instagram logo.png" alt="instagram" class="khj-sns-logo"></a>
+                            <a class="khj-sns-logo-container"><img src="./img/linkdin logo.png" alt="linkdin" class="khj-sns-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="bsj7"></section>
@@ -483,11 +709,11 @@
                 </div>
             </div>
             <div class="kes--testimonials-body-buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
             </div>
         </div>
     </section>
@@ -622,9 +848,9 @@
             <div class="contact-section">
                 <div class="contact-info">
                     <ul>
-                        <li><i>&#128204;</i><span>Address: A108 Adam Street, New York, NY 535022</span></li>
-                        <li><i>&#128222;</i><span>Call Us: +1 5589 55488 55</span></li>
-                        <li><i>&#128231;</i><span>Email Us: info@example.com</span></li>
+                        <li><i>&#128204;</i><div>Address: A108 Adam Street, New York, NY 535022</div></li>
+                        <li><i>&#128222;</i><div>Call Us: +1 5589 55488 55</div></li>
+                        <li><i>&#128231;</i><div>Email Us: info@example.com</div></li>
                     </ul>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.720539553171!2d-74.00594138459778!3d40.71277577933181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316f1b4b81%3A0x31be3fa54fa83237!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1697531837417!5m2!1sen!2sus" 
@@ -637,7 +863,7 @@
                         <input type="email" name="email" placeholder="Your Email" required>
                         <input type="text" name="subject" placeholder="Subject">
                         <textarea name="message" placeholder="Message" rows="6"></textarea>
-                        <button type="submit">Send Message</button>
+                        <input type="submit">Send Message</input>
                     </form>
                 </div>
             </div>
