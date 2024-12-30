@@ -7,13 +7,20 @@
   }
 }
 
+section{
+  padding-top: 60px;
+}
+
+#khj6-1, #khj6-2{
+  background: white;
+}
 .khj-hidden{
   z-index: -10;
   position: absolute;
   visibility: hidden;
 }
 
-.kes--testimonials-header {
+#khj6-1 > .kes--testimonials-header, #khj6-2 > .kes--testimonials-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +28,7 @@
   text-align: center;
   padding-inline: 12px;
   padding-bottom: 60px;
+  width: 100%;
 }
 .kes--header-title {
   color: #37517e;

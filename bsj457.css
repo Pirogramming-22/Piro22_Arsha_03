@@ -170,7 +170,7 @@ body {
     
     color: var(--default-color);
     background-color: #f5f6f8;
-    padding: 60px 0;
+    /*padding: 60px 0;*/
     scroll-margin-top: 88px;
     margin: 0;
     font-family: var(--bs-body-font-family);

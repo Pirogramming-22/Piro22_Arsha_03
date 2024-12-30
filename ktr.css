@@ -11,6 +11,9 @@ body {
     padding: 20px;
 }
 
+#ktr10{
+    background: white;
+}
 
 .ktr-contact-header {
     display: flex;
