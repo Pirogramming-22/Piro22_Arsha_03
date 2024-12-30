@@ -558,59 +558,40 @@ body {
     background: #37517e;
 }
 /* 시작과 끝점만 정의 */
-@keyframes slidein100 {
+/* 공통 애니메이션 정의 */
+@keyframes slidein {
     from { 
         width: 0%; 
     }
     to { 
-        width: 100%; 
+        width: var(--target-width); /* 커스텀 속성 사용 */
     }
 }
-.cms3__percent .cms__bar .p100{
-    width: 100%;
-    animation-name: slidein100;
+
+/* 공통 스타일 정의 */
+.cms3__percent .cms__bar div {
+    animation-name: slidein;
     animation-timing-function: ease-in;
     animation-duration: 1s;
 }
-@keyframes slidein90 {
-    from { 
-        width: 0%; 
-    }
-    to { 
-        width: 90%; 
-    }
+
+.cms3__percent .cms__bar .p100 {
+    --target-width: 100%;
+    width: var(--target-width);
 }
-.cms3__percent .cms__bar .p90{
-    width: 90%; 
-    animation-name: slidein90;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
+
+/* 각 클래스에서 커스텀 속성 설정 */
+.cms3__percent .cms__bar .p90 {
+    --target-width: 90%;
+    width: var(--target-width);
 }
-@keyframes slidein75 {
-    from { 
-        width: 0%; 
-    }
-    to { 
-        width: 75%; 
-    }
+
+.cms3__percent .cms__bar .p75 {
+    --target-width: 75%;
+    width: var(--target-width);
 }
-.cms3__percent .cms__bar .p75{
-    width: 75%; 
-    animation-name: slidein75;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-}
-@keyframes slidein55 {
-    from { 
-        width: 0%; 
-    }
-    to { 
-        width: 55%; 
-    }
-}
-.cms3__percent .cms__bar .p55{
-    width: 55%;
-    animation-name: slidein55;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
+
+.cms3__percent .cms__bar .p55 {
+    --target-width: 55%;
+    width: var(--target-width);
 }
