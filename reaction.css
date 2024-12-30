@@ -48,6 +48,20 @@
         
 }
 @media (max-width: 767px) {
+    /*cms*/
+    #cms1 .cms__main{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    #cms1 .cms__main img{
+        width: 100%;
+    }
+    #cms2 .cms__usDescription{
+        width: 75%;
+    }
+    #cms3 .cms3__container .cms3__downleft, #cms3 .cms3__container .cms3__downRight{
+        width: 90%;
+    }
     /*kes*/
     /*bsj*/
     #bsj-fourth-main {
