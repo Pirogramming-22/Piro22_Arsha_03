@@ -6,7 +6,9 @@
     max-width: 1320px;
   }
 }
-
+html{
+  width:100vw;
+}
 section{
   padding-top: 60px;
 }
