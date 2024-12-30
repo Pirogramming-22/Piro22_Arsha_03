@@ -11,14 +11,14 @@
 body {
     font-family: var(--default-font);
 }
-.kes--testimonials-header {
+.cms_kes--testimonials-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.kes--header-title {
+.cms_kes--header-title {
     color: #37517e;
     font-size: 32px;
     font-weight: 700;
@@ -27,26 +27,26 @@ body {
     font-family: var(--heading-font);
     
 }
-.kes--header-divider {
+.cms_kes--header-divider {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 16px;
 }
-.kes--header-divider > div:nth-child(1) {
+.cms_kes--header-divider > div:nth-child(1) {
     width: 160px;
     height: 1px;
     background-color: #44444466;
 }
-.kes--header-divider > div:nth-child(2) {
+.cms_kes--header-divider > div:nth-child(2) {
     width: 60px;
     height: 3px;
     background-color: #47b2e4;
     position: relative;
     top: -2px;
 }
-.kes--header-description {
+.cms_kes--header-description {
     color: #444444;
     line-height: 24px;
     margin: 0;
@@ -351,18 +351,18 @@ body {
     grid-template-columns: repeat(2, 1fr);
     padding: 60px 12px 0;
 }
-#cms2 .kes--header-description{
+#cms2 .cms_kes--header-description{
     margin-bottom: 16px;
     font-size: 16.5px;
 }
 
-#cms2 .kes--header-description, #cms2 li{
+#cms2 .cms_kes--header-description, #cms2 li{
     text-align: left;
 }
 #cms2 li{
     padding-bottom: 5px;
 }
-#cms2 li .kes--header-description{
+#cms2 li .cms_kes--header-description{
     display: inline;
     line-height: 1.8;
 }
@@ -433,7 +433,7 @@ body {
     color: #37517e;
     margin-bottom: 8px;
 }
-#cms3 .cms3__upleft .kes--header-description, #cms3 .cms3__downRight .kes--header-description{
+#cms3 .cms3__upleft .cms_kes--header-description, #cms3 .cms3__downRight .cms_kes--header-description{
     margin-bottom: 1rem;
     color: #888989;
     line-height: normal;
