@@ -295,7 +295,8 @@
     line-height: 24px;
     color: #37517e;
     transition: 0.3s;
-    width: 824.010
+    font-family: "Jost", sans-serif;
+    top: 0;
 }
 .kes--questions-body-card-header > label:nth-child(2) > h3:hover {
     cursor: pointer;

@@ -7,7 +7,12 @@
   }
 }
 html{
-  width:100vw;
+  width:100dvw;
+}
+body{
+  width:100dvw;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 section{
   padding-top: 60px;

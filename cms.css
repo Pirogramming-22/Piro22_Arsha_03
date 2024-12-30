@@ -8,6 +8,10 @@
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--default-font);
 }
@@ -153,8 +157,7 @@ body {
     color: #47b2e4;
 }
 #cms1>header .cms__header1 .cms__header__nav>ul>li:last-of-type{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:7px 20px;
     background-color: #47b2e4;
     border-radius: 20px;
     transition: 0.4s ease;
