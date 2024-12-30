@@ -258,6 +258,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.kes-sns-logo-container a{
+    background:transparent;
+}
+
 .kes--questions-body-card-header > svg:nth-child(1) {
     width: 20px;
     height: 20px;
@@ -285,7 +290,7 @@
 .kes--questions-body-card-header > label:nth-child(3) > svg {
     width: 16px;
     height: 16px;
-    fill: #444444;
+    /*fill: #444444;*/
     cursor: pointer;
     transition: 0.3s;
 }
