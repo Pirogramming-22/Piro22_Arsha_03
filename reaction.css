@@ -1,5 +1,55 @@
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     /*kes*/
+    .kes--testimonials-humaninfo-container {
+        width: 960px;
+    }
+    .kes--testimonials-body-humaninfo {
+        width: 936.007px;
+    }
+    .kes--questions-cards-container {
+        width: 776px;
+    }
+}
+@media (max-width: 991px) {
+    /*cms*/
+    #cms1 .cms__main{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    #cms2 .cms__usDescription{
+        width: 80%;
+        margin: 0 auto 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+    }
+    #cms3 .cms3__container .cms3__upperPage{
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #cms3 .cms3__container .cms3__upperPage .cms3__upleft{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #cms3 .cms3__container .cms3__downCon{
+        flex-direction: column;
+        gap: 24px;
+    }
+    /*kes*/
+    .kes--testimonials-humaninfo-container {
+        width: 720px;
+    }
+    .kes--testimonials-body-humaninfo {
+        width: 696.007px;
+    }
+    .kes--questions-cards-container {
+        width: 696px;
+    }
+    
     /*bsj*/
     #bsj-fourth-main{
         grid-template-columns: 1fr 1fr;
@@ -17,10 +67,37 @@
         grid-template-columns: 1fr; 
         gap: 24px;
     }
+<<<<<<< HEAD
     /*KHJ*/
+=======
+    
+>>>>>>> b85b18ecd8abdf0160c0abb9203609996bca8027
 }
 @media (max-width: 767px) {
+    /*cms*/
+    #cms1 .cms__main{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    #cms1 .cms__main img{
+        width: 100%;
+    }
+    #cms2 .cms__usDescription{
+        width: 75%;
+    }
+    #cms3 .cms3__container .cms3__downleft, #cms3 .cms3__container .cms3__downRight{
+        width: 90%;
+    }
     /*kes*/
+    .kes--testimonials-humaninfo-container {
+        max-width: 540px;
+    }
+    .kes--testimonials-body-humaninfo {
+        max-width: 516.007px;
+    }
+    .kes--questions-cards-container {
+        max-width: 516px;
+    }
     /*bsj*/
     #bsj-fourth-main {
         grid-template-rows: repeat(4, 1fr); 

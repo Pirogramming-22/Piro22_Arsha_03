@@ -170,7 +170,9 @@ body {
     filter: brightness(95%);
     color: #ffffff;
 }
-
+#cms1 .cms__header__nav .hamburger{
+    display: none;
+}
 
 .cms__main__container{
     background-color: #37517e;
