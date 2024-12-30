@@ -307,11 +307,13 @@ body {
     align-items: center;
     line-height: var(--bs-body-line-height);
 
+
     position: relative;
     background: url(./section5-bg.jpg) no-repeat center center; 
     background-size: cover; 
     background-attachment: fixed; 
     overflow: hidden;
+
     
 }
 
@@ -340,10 +342,12 @@ body {
     
 }
 #bsj-calltoaction{
+
     z-index: 5;
     padding-right: calc(1.5rem* .5);
     padding-left: calc(1.5rem* .5);
     width: 75%;
+
     
 }
 #bsj-calltoaction-title{
@@ -371,11 +375,14 @@ body {
     right:20px;
     text-align: center;
     padding: 0 12px;
-    z-index: 6;
+
 }
+
+
 
 #bsj-callocation-button{
     
+
     font-family: var(--heading-font);
     font-weight: 500;
     font-size: 16px;
