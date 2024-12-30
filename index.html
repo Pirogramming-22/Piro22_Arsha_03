@@ -65,22 +65,26 @@
                 </div>
                 <div class="cms__header__nav">
                     <ul>
-                        <li><a class="cms__navMenu" href="#">Home</a></li>
-                        <li><a class="cms__navMenu" href="#">About</a></li>
-                        <li><a class="cms__navMenu" href="#">Services</a></li>
-                        <li><a class="cms__navMenu" href="#">Portfolio</a></li>
-                        <li><a class="cms__navMenu" href="#">Team</a></li>
-                        <li><a class="cms__navMenu" href="#">Pricing</a></li>
-                        <li><a class="cms__navMenu" href="#">
+
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Home</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">About</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Services</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Portfolio</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Team</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Pricing</a></li>
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">
+
                             Dropdown
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                             </svg>
                         </a></li>
-                        <li><a class="cms__navMenu" href="#">Contact</a></li>
+
+                        <li class="cms__navGone"><a class="cms__navMenu" href="#">Contact</a></li>
                         <li><a class="cms__navMenu" id="cms_getStart" href="#">Get Started</a></li>
                     </ul>
-                    <div class="hamburger"><a href="">☰</a></div>
+                    <div class="cms__hamburger">☰</div>
+
                 </div>
             </div>
         </header>
@@ -360,7 +364,19 @@
             <a id="bsj-callocation-button" href="#">Call To Action</a>
         </div>
     </section>
-    <section id="khj6-1"> 
+
+    <section id="khj6-1">
+            <div class="khj-lightbox" id="khj-App-lightbox">
+                <div class="lightbox-content">
+                  <button class="lightbox-prev">←</button>
+                  <img src="./img/masonry-portfolio-1.jpg" alt="Sample Image">
+                  <button class="lightbox-next">→</button>
+                </div>
+                <div class="lightbox-caption">App 2</div>
+            </div>
+        <div class="khj-hidden-img-scale-up" id="khj-Branding-scale-up"></div>
+        <div class="khj-hidden-img-scale-up" id="khj-Product-scale-up"></div>
+
         <div class="kes--testimonials-header">
             <h2 class="kes--header-title">Portfolio</h2>
             <div class="kes--header-divider">
@@ -388,7 +404,9 @@
                     <input type="radio" name="options" value="Web" id="khj-Web">
                     <div class="custom-khj-radio">Web</div>
                   </label>
-            </form>
+
+              </form>
+
             <div class="khj-flexcontainer">
                 <div class="khj-col">
                   <div class="khj-img-container khj-App">
@@ -515,10 +533,10 @@
                       </div>
                   </div>
                 </div>
-            </div>
+
+              </div>
           </div>
         </div>
-
 
     </section>
     <section id="khj6-2">
@@ -663,7 +681,10 @@
             </div>
 
 
-            <!--두번쨰카드--><div class="bsj-seventh-maincard" id="bsj-seventh-maincard-2">
+
+            <!--두번쨰카드-->
+            <div class="bsj-seventh-maincard" id="bsj-seventh-maincard-2">
+
             
                 <div class="bsj-fourth-maincard-title">Business Plan</div>
                 <div class="bsj-price">
@@ -921,14 +942,144 @@
                 </div>
             </div>
             <div class="kes--testimonials-body-buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
             </div>
         </div>
     </section>
+    <section id="kes9">
+        <div class="kes--testimonials-header">
+            <h2 class="kes--header-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="kes--header-divider">
+                <div></div>
+                <div></div>
+            </div>
+            <P class="kes--header-description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
+        </div>
+        <div class="kes--questions-body">
+            <div class="kes--questions-cards-container">
+                <div class="kes--question-card-wrapper">
+                    <input type="checkbox" id="kes--toggle-card-1" class="kes--toggle-card-checkbox" style="display: none;">
+                    <div class="kes--questions-body-card">
+                        <div class="kes--questions-body-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                            <label for="kes--toggle-card-1" class="kes--questions-toggle">
+                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                            </label>
+                            <label for="kes--toggle-card-1" class="kes--questions-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <p class="kes--questions-body-card-description">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </p>
+                    </div>
+                </div>
+                <div class="kes--question-card-wrapper">
+                    <input type="checkbox" id="kes--toggle-card-2" class="kes--toggle-card-checkbox" style="display: none;">
+                    <div class="kes--questions-body-card">
+                        <div class="kes--questions-body-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                            <label for="kes--toggle-card-2" class="kes--questions-toggle">
+                                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                            </label>
+                            <label for="kes--toggle-card-2" class="kes--questions-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <p class="kes--questions-body-card-description">
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        </p>
+                    </div>
+                </div>
+                <div class="kes--question-card-wrapper">
+                    <input type="checkbox" id="kes--toggle-card-3" class="kes--toggle-card-checkbox" style="display: none;">
+                    <div class="kes--questions-body-card">
+                        <div class="kes--questions-body-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                            <label for="kes--toggle-card-3" class="kes--questions-toggle">
+                                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                            </label>
+                            <label for="kes--toggle-card-3" class="kes--questions-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <p class="kes--questions-body-card-description">
+                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                        </p>
+                    </div>
+                </div>
+                <div class="kes--question-card-wrapper">
+                    <input type="checkbox" id="kes--toggle-card-4" class="kes--toggle-card-checkbox" style="display: none;">
+                    <div class="kes--questions-body-card">
+                        <div class="kes--questions-body-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                            <label for="kes--toggle-card-4" class="kes--questions-toggle">
+                                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                            </label>
+                            <label for="kes--toggle-card-4" class="kes--questions-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <p class="kes--questions-body-card-description">
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        </p>
+                    </div>
+                </div>
+                <div class="kes--question-card-wrapper">
+                    <input type="checkbox" id="kes--toggle-card-5" class="kes--toggle-card-checkbox" style="display: none;">
+                    <div class="kes--questions-body-card">
+                        <div class="kes--questions-body-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                            </svg>
+                            <label for="kes--toggle-card-5" class="kes--questions-toggle">
+                                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                            </label>
+                            <label for="kes--toggle-card-5" class="kes--questions-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <p class="kes--questions-body-card-description">
+                            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                        </p>
+                    </div>
+                </div>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+                <input></input>
+            </div>
+        </div>
+    </section>
+
     <section id="kes9">
         <div class="kes--testimonials-header">
             <h2 class="kes--header-title">FREQUENTLY ASKED QUESTIONS</h2>
@@ -1058,6 +1209,7 @@
             </div>
         </div>
     </section>
+
     <section id="ktr10">
         <!-- <div class="container">
             <h1>Contact</h1>
