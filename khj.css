@@ -1,0 +1,62 @@
+@import "./reset.css";
+
+.kes--testimonials-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 12px;
+  padding-bottom: 60px;
+}
+.kes--header-title {
+  color: #37517e;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+}
+.kes--header-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.kes--header-divider > div:nth-child(1) {
+  width: 160px;
+  height: 1px;
+  background-color: #44444466;
+}
+.kes--header-divider > div:nth-child(2) {
+  width: 60px;
+  height: 3px;
+  background-color: #47b2e4;
+  position: relative;
+  top: -2px;
+}
+.kes--header-description {
+  color: #444444;
+  line-height: 24px;
+  margin: 0;
+}
+.khj-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.khj-selected{
+  background-color: #47b2e4;
+  color: white;
+}
+.khj-menu-deco{
+  padding: 8px 20px 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  font-family: "Jost", sans-serif;;
+}
