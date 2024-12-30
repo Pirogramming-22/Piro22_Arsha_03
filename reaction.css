@@ -29,7 +29,7 @@
         margin:0;
         width: 100%;
     }
-    #cms1 .cms__liGetStart{
+    #cms1>header .cms__header1 .cms__header__nav>ul>li:last-of-type {
         padding-top: 5px;
         padding-bottom: 5px;
     }
