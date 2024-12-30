@@ -52,6 +52,10 @@ body {
     margin: 0;
 }
 
+#cms1{
+    padding:0;
+}
+
 #cms1> header{
     z-index: 2000;
     background-color:  rgba(55, 81, 126, 0.9);
@@ -343,10 +347,13 @@ body {
 
 
 #cms2{
-    max-width: 1320px;
-    margin: 60px auto;
+    width: 100%;
+    /*max-width: 1320px;*/
+    /*margin: 60px auto;*/
+    background: white;
 }
 .cms__usDescription{
+    max-width: 1320px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 60px 12px 0;
@@ -407,7 +414,8 @@ body {
 
 
 #cms3{
-    margin: 60px 0;
+    /*margin: 60px 0;*/
+    background: white;
 }
 .cms3__container{
     display: flex;

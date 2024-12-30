@@ -11,15 +11,9 @@ body {
     padding: 20px;
 }
 
-/* h1 {
-    text-align: center;
-    color: #2c3e50;
+#ktr10{
+    background: white;
 }
-
-p {
-    text-align: center;
-    color: #7f8c8d;
-} */
 
 .ktr-contact-header {
     display: flex;
@@ -350,8 +344,8 @@ input:focus, textarea:focus {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: gray;
-    border-color: #444444;
+    background-color: transparent;
+    border: 1px solid #444444;
     border-radius: 50%;
     text-decoration: none;
     color: white;
@@ -384,6 +378,13 @@ input:focus, textarea:focus {
 
 .ktr-footer-designed span {
     color: #3498db;
+}
+
+#ktr10{
+    padding-bottom: 60px;
+}
+#ktr11{
+    padding-top: 0;
 }
 
 @media (max-width: 768px) {
