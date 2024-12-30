@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 .ktr-header-title {
     color: #37517e;
@@ -28,6 +29,7 @@ body {
     font-weight: 700;
     position: relative;
     margin: 0;
+    padding : 0px 0px 20px;
 }
 .ktr-header-divider {
     display: flex;
@@ -281,7 +283,7 @@ input:focus, textarea:focus {
     margin-top: 5px;
 }
 
-.ktr-footer-arsha h1, .ktr-footer-useful-links h4, .ktr-footer-our-services h4, .ktr-footer-follow-us h4 {
+.ktr-footer-arsha h1, .ktr-footer-useful-links h4, .ktr-footer-our-services h4, .ktr-follow-us h4 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -334,7 +336,8 @@ input:focus, textarea:focus {
 .ktr-footer-social-links {
     text-align: center;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
