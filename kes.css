@@ -1,11 +1,12 @@
 /* 섹션 헤더 */
 .kes--testimonials-header {
+    font-family: "Jost", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 960px;
+    box-sizing: border-box;
 }
 .kes--header-title {
     color: #37517e;
@@ -13,6 +14,8 @@
     font-weight: 700;
     position: relative;
     margin: 0;
+    width: 1140px;
+    box-sizing: border-box;
 }
 .kes--header-divider {
     display: flex;
@@ -34,9 +37,12 @@
     top: -2px;
 }
 .kes--header-description {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     color: #444444;
     line-height: 24px;
     margin: 0;
+    width: 1140px;
+    box-sizing: border-box;
 }
 
 /* 섹션8 body */
@@ -289,6 +295,7 @@
     line-height: 24px;
     color: #37517e;
     transition: 0.3s;
+    width: 824.010
 }
 .kes--questions-body-card-header > label:nth-child(2) > h3:hover {
     cursor: pointer;
