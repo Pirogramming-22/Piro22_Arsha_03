@@ -111,6 +111,10 @@
     .kes--questions-cards-container {
         width: 696px;
     }
+    #kes--spacial-2, #kes--spacial-5 {
+        position: relative;
+        top: -12px;
+    }
     
     /*bsj*/
     #bsj-fourth-main{
@@ -174,6 +178,10 @@
     }
     .kes--questions-cards-container {
         max-width: 516px;
+    }
+    #kes--spacial-1, #kes--spacial-3, #kes--spacial-4 {
+        position: relative;
+        top: -12px;
     }
     /*bsj*/
     #bsj-fourth-main {
