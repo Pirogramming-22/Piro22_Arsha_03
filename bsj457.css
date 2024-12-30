@@ -147,6 +147,7 @@
     --bs-form-valid-border-color: #198754;
     --bs-form-invalid-color: #dc3545;
     --bs-form-invalid-border-color: #dc3545;
+    
 }
 
 body {
@@ -171,6 +172,16 @@ body {
     background-color: #f5f6f8;
     padding: 60px 0;
     scroll-margin-top: 88px;
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   
 }
 
@@ -382,14 +393,28 @@ body {
     flex-direction: column;
     align-content:center;
     height: max-content;
+    margin: 0 auto;
+    
+    --background-color: #f5f6f8;
+    --surface-color: #ffffff;
+    
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+    
 }
 #bsj-seventh-main{
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(3,1fr);
     column-gap: 24px;
     margin:0 51.5px;
-    padding-right: calc(1.5rem* .5);
-    padding-left: calc(1.5rem* .5);
+    max-width: calc(100% - 103px);
+    
 
 }
 
@@ -409,11 +434,114 @@ body {
     
 }
 
-.bsj-seventh-maincard:hover{
-    transform: translateY(-10px);
-    
-}
+
 
 #bsj-seventh-maincard-2{
     border-top-color: var(--accent-color);
+}
+
+
+
+.bsj-price{
+    display: block;
+
+
+    color: var(--accent-color);
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    margin-bottom: 0;
+}
+.bsj-price > sup{
+    font-size: 28px;
+    top: -.5em;
+    position: relative;
+   
+    line-height: 0;
+    vertical-align: baseline;
+}
+.bsj-price > span{
+    font-weight: 400;
+    font-family: var(--heading-font);
+    color: 
+    color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 18px;
+    
+}
+
+
+
+
+
+
+
+
+
+.bsj-seventh-button-wrap{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 330px;
+  
+    right:20px;
+  
+    padding: 0 12px;
+    position: relative;
+    z-index: 10;
+}
+
+.bsj-seventh-button{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+
+    margin: 10px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    text-decoration: none;
+
+
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    transition: 0.3s;
+
+}
+
+
+
+.bsj-seventh-button:hover ,#bsj-seventh-button2{
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    color: var(--contrast-color);
+}
+
+
+.bsj-seventh-maincard-details{
+    padding: 0 0 16px;
+    margin: 20px 0;
+}
+.bsj-seventh-maincard-details > div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.bsj-bi-x{
+    color:color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.bsj-check {
+    color:color-mix(in srgb, var(--default-color), transparent 30%);
+    padding-left: 3px;
+}
+.bsj-x {
+    text-decoration: line-through;
+    color:color-mix(in srgb, var(--default-color), transparent 60%);
+    padding-left: 3px;
 }
