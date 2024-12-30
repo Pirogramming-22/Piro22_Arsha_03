@@ -380,6 +380,13 @@ input:focus, textarea:focus {
     color: #3498db;
 }
 
+#ktr10{
+    padding-bottom: 60px;
+}
+#ktr11{
+    padding-top: 0;
+}
+
 @media (max-width: 768px) {
     .ktr-footer-container-top {
         flex-direction: column;
