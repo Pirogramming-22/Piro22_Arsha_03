@@ -1,10 +1,6 @@
 @import "./reset.css";
 /*section 별로 margin 존재 구현 필요*/
 
-section{
-  padding: 60px 0;
-}
-
 @media (min-width: 1400px) {
   .kes--testimonials-header .khj-container {
     max-width: 1320px;
