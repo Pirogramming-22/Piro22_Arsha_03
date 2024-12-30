@@ -17,7 +17,7 @@
         grid-template-columns: 1fr; 
         gap: 24px;
     }
-        
+    /*KHJ*/
 }
 @media (max-width: 767px) {
     /*kes*/
@@ -28,6 +28,7 @@
         gap: 24px;
         margin:0 auto;
     }
+    /*KHJ*/
 }
 
 

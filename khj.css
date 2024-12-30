@@ -249,6 +249,10 @@ section{
   display: flex;
 }
 
+.khj-gridcontainer{
+  display:none;
+}
+
 /*---------------------------------------Team css-------------------------------------------------*/
 
 .khj-container-2-wrapper{
