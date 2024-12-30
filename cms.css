@@ -52,6 +52,59 @@ body {
     margin: 0;
 }
 
+#cms1> header{
+    
+    z-index: 2000;
+    background-color:  rgba(55, 81, 126, 0.9);
+    color: #ffffff;
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+}
+#cms1>header .cms__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+#cms1 #cms__header__name{
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#cms1>header .cms__header .cms__header__nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cms1>header .cms__header .cms__header__nav>ul>li{
+    list-style: none;
+    padding: 5px 15px;
+    transition: 0.4s ease;
+}
+#cms1>header .cms__header .cms__header__nav>ul>li svg{
+    position: relative;
+    top: 3px;
+}
+#cms1>header .cms__header .cms__header__nav>ul>li:hover{
+    color: #47b2e4;
+}
+#cms1>header .cms__header .cms__header__nav>ul>li:last-of-type{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #47b2e4;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+#cms1>header .cms__header .cms__header__nav>ul>li:last-of-type:hover{
+    filter: brightness(95%);
+    color: #ffffff;
+}
+
 
 .cms__main__container{
     background-color: #37517e;
@@ -130,37 +183,29 @@ body {
     animation-name: imgMoving;
     animation-duration: 4s;
     animation-timing-function: ease;
-    animation-iteration-count: infinite; /* 무한 반복 */
+    animation-iteration-count: infinite;
     animation-delay: 1s;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100% / 6 * 8)); /* 8개의 이미지가 6열 너비를 넘어가도록 이동 */
-    }
-}
 .cms__main__underBar{
-    height: 72px;
-    margin: 12px 0;
+    padding: 22px 0;
+    background-color: #f5f6f8;
 }
 .cms__underBar{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px; 
-    animation: scroll 15s linear infinite; 
-    margin: 0 auto;
-    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cms__underBar .cms__underBar-image{
-    max-width: 70%;
+    padding: 10px 0;
+    max-width: 100px;
     max-height: 100px;
     object-fit: contain; 
+    transition: 0.2s ease;
 }
-
-
+.cms__underBar .cms__underBar-image:hover{
+    transform: scale(1.1);
+}
 #cms2{
     max-width: 1320px;
     margin: 60px auto;
@@ -305,7 +350,6 @@ body {
     padding: 10px 0 0 0;
     display: block;
 }
-
 #cms3 .cms3__upleft__box .cms3__toggle{
     display: none;
 }
