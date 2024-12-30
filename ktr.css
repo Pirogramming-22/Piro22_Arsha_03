@@ -11,6 +11,15 @@ body {
     padding: 20px;
 }
 
+/* h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+} */
 
 .ktr-contact-header {
     display: flex;
@@ -107,18 +116,11 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* 추가 코드 중앙 정렬 */
-
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    /*꽉찬 배치 위해 추가 코드*/
-    justify-content: center;
-    align-items: stretch; /* 부모를 꽉 채우게 */
-    gap: 15px; /* 각 입력 요소 사이의 간격 */
-    text-align: center;
 }
 
 .contact-form form input,
@@ -128,10 +130,21 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    width: 100%; /* 너비 100%로 설정하여 부모를 꽉 채우게 */
-    box-sizing: border-box; /* 패딩을 포함하여 너비 조정 */
 }
 
+.contact-form form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #2980b9;
+}
 
 @media (max-width: 768px) {
     .contact-info,
@@ -141,14 +154,12 @@ body {
     }
 }
 
-
-.contact-form form {
+/* .footer_newsletter form {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    text-align: center;
-}
+} */
 
 input:focus, textarea:focus {
     border-color: #47b2e4;
@@ -158,25 +169,23 @@ input:focus, textarea:focus {
 
 
 .contact-form form input[type="submit"] {
+    width: 100%;
     border: 0;
     font-size: 15px;
     padding: 12px 25px;
     margin: -7px -405px -7px 0;
-    margin: 0 auto; /* 버튼을 중앙 배치 */
-    align-self: center; /* 버튼을 세로 중앙으로 배치 */
     border-radius: 50px;
     color: white;
     background-color: #3498db;
+    /* position:absolute; */
     z-index: 2;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: auto; /* 버튼 크기 자동 조정 */
-    /* margin: 0;  */
 }
 
 .contact-form form input[type="submit"]:hover {
     background-color: #6baeda;
-} 
+}
 
 footer {
     background-color: white; 
