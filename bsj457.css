@@ -491,7 +491,7 @@ bsj-callocation-button-wrap{
     width: 330px;
   
     right:20px;
-  
+    color: var(--accent-color);
     padding: 0 12px;
     position: relative;
     z-index: 10;

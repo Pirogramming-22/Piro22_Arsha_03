@@ -25,6 +25,7 @@ body {
 }
 .ktr-header-title {
     color: #37517e;
+    font-family: "Jost", sans-serif;;
     font-size: 32px;
     font-weight: 700;
     position: relative;
@@ -60,16 +61,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-     gap : 20px; /*위아래 배치 해결하고자  */
+    gap : 20px; /*위아래 배치 해결하고자  */
+    padding: 0 60px;
 }
 
 .contact-info {
     width: 48%;
     padding: 20px;
-    background: #f4f8fb;
-    border-radius: 5px;
+    background: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex : 1;
+    border-top: 4px solid #47b2e4;
+    border-bottom: 4px solid #47b2e4;
     
 }
 .contact-info,
@@ -89,10 +92,42 @@ body {
     margin-bottom: 20px;
 }
 
-.contact-info ul li i {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #3498db;
+.pic {
+   
+    font-size: 20px;
+    margin-right: 15px;
+    color: #47b2e4;
+    transition: all 0.3s ease-in-out;
+    background: color-mix(in srgb, #47b2e4, transparent 92%);
+    width: 44px;
+    height: 44px;
+    
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.ktr-contact-title{
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+
+}
+.ktr-contact-details{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+
+}
+
+.ktr-contact-info{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info ul li span {
@@ -110,13 +145,15 @@ body {
 .contact-form {
     width: 48%;
     padding: 20px;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #47b2e4;
+    border-bottom: 4px solid #47b2e4;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+  
 }
 
 .contact-form form input,
@@ -124,22 +161,25 @@ body {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    
     font-size: 16px;
 }
 
-.contact-form form button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+#ktr-send{
+    width: fit-content;
+    
 }
+#sendyourm{
+    text-align: center;
+}
+.ktr-form-details{
+    margin-bottom: 8px;
+}
+
 
 .contact-form form button:hover {
-    background-color: #2980b9;
+   
+    background: color-mix(in srgb, #47b2e4, transparent 25%);
 }
 
 @media (max-width: 768px) {
@@ -169,10 +209,10 @@ input:focus, textarea:focus {
     border: 0;
     font-size: 15px;
     padding: 12px 25px;
-    margin: -7px -405px -7px 0;
+    margin: -7px -0 -7px 0;
     border-radius: 50px;
     color: white;
-    background-color: #3498db;
+    background-color: #47b2e4;
     /* position:absolute; */
     z-index: 2;
     cursor: pointer;
@@ -231,6 +271,7 @@ input:focus, textarea:focus {
     padding: 10px 15px;
     width: 500px;
     border: 1px solid #ddd;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     font-size: 16px;
     position: relative;
@@ -245,7 +286,7 @@ input:focus, textarea:focus {
     margin: -7px -405px -7px 0;
     border-radius: 50px;
     color: white;
-    background-color: #3498db;
+    background-color: #47b2e4;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -320,11 +361,11 @@ input:focus, textarea:focus {
 }
 
 .ktr-footer-useful-links span, .ktr-footer-our-services span {
-    color: #3498db;
+    color: #47b2e4;
 }
 
 .ktr-footer-useful-links ul li a:hover, .ktr-footer-our-services ul li a:hover {
-    color: #3498db;
+    color: #47b2e4;
 }
 
 .ktr-footer-follow-us p {
@@ -358,8 +399,8 @@ input:focus, textarea:focus {
 }
 .ktr-footer-social-links a:hover {
     background-color: white;
-    color: #3498db;
-    border-color: #3498db;
+    color: #47b2e4;
+    border-color: #47b2e4;
 }
 
 .ktr-footer-container-bottom {
@@ -381,7 +422,7 @@ input:focus, textarea:focus {
 }
 
 .ktr-footer-designed span {
-    color: #3498db;
+    color: #47b2e4;
 }
 
 #ktr10{
